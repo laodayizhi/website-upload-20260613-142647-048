@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索影视资源 - 日本高清影视资源</title>
+  <meta name="description" content="搜索日本高清影视资源中的电影、电视剧、地区、年份、标签和热门视频内容。">
+  <meta name="keywords" content="日本高清影视,免费视频,电影推荐,高清资源,在线观看,热门影视,日本电影,视频播放,流畅播放,影视资源,搜索,影视搜索">
+  <link rel="stylesheet" href="assets/original-style.css">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-logo" href="./index.html" aria-label="日本高清影视资源">
+        <span class="logo-mark">映</span>
+        <span class="logo-text">日本高清影视资源</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="打开导航" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" data-main-nav>
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./ranking.html">排行榜</a>
+        <a class="nav-link active" href="./search.html">搜索</a>
+      </nav>
+      <form class="header-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索影片、地区、年份" aria-label="搜索影片">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero small-hero">
+      <span class="eyebrow">影视搜索</span>
+      <h1>搜索电影与剧集</h1>
+      <p>输入影片名、类型、地区或年份，快速查找高清影视内容。</p>
+    </section>
+    <section class="search-page-panel">
+      <form class="search-page-form" data-search-form>
+        <input type="search" name="q" placeholder="搜索影片、地区、年份、标签" aria-label="搜索影片" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+      <div class="search-tools">
+        <select data-search-region aria-label="地区筛选"><option value="">全部地区</option></select>
+        <select data-search-year aria-label="年份筛选"><option value="">全部年份</option></select>
+      </div>
+    </section>
+    <section class="movie-grid" id="searchResults" aria-live="polite"></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a class="site-logo" href="./index.html" aria-label="日本高清影视资源">
+          <span class="logo-mark">映</span>
+          <span class="logo-text">日本高清影视资源</span>
+        </a>
+        <p>精选热门电影、剧集与高清影视内容，提供流畅的在线观看体验。</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h2>站内导航</h2>
+          <a href="./index.html">首页</a>
+          <a href="./categories.html">分类</a>
+          <a href="./ranking.html">排行榜</a>
+          <a href="./search.html">搜索</a>
+        </div>
+        <div>
+          <h2>精选分类</h2>
+          <a href="./category-01.html">高清影视专区01</a>
+          <a href="./category-02.html">高清影视专区02</a>
+          <a href="./category-03.html">高清影视专区03</a>
+          <a href="./category-04.html">高清影视专区04</a>
+          <a href="./category-05.html">高清影视专区05</a>
+          <a href="./category-06.html">高清影视专区06</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 日本高清影视资源</div>
+  </footer>
+
+  <script src="assets/site.js"></script>
+  <script src="assets/search-data.js"></script>
+  <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+</body>
+</html>

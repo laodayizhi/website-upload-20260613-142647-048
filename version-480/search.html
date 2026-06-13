@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索 - 日韩好看视频</title>
+    <meta name="description" content="日韩在线好看视频站内搜索，快速查找电影、电视剧和影视资源。">
+    <meta name="keywords" content="日韩视频,韩国电影,日本电视剧,免费在线观看,高清影视,日韩综艺,最新电影,热门电视剧,在线播放,影视资源">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script defer src="assets/js/search-data.js"></script>
+    <script defer src="assets/js/site.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container-custom nav-shell">
+            <a class="brand" href="index.html" aria-label="日韩好看视频">
+                <span class="brand-icon">▶</span>
+                <span class="brand-text">日韩好看视频</span>
+            </a>
+            <nav class="nav-links" aria-label="主导航">
+                <a class="nav-link" href="index.html">首页</a>
+                <a class="nav-link is-active" href="categories.html">分类总览</a>
+                <a class="nav-link" href="rank.html">热播榜</a>
+                <a class="nav-link" href="category/latest-update.html">最新更新</a>
+                <a class="nav-link" href="category/japanese-drama.html">日本剧集</a>
+                <a class="nav-link" href="category/korean-movie.html">韩国电影</a>
+                <button class="nav-search-button" type="button" data-search-toggle aria-label="展开搜索">⌕</button>
+            </nav>
+            <button class="mobile-menu-button" type="button" data-mobile-toggle aria-label="展开菜单">☰</button>
+        </div>
+        <div class="container-custom search-panel" data-search-panel>
+            <form class="header-search" action="search.html" data-search-form>
+                <input class="input-field" type="search" name="q" placeholder="搜索影片、剧集、年份或标签..." autocomplete="off">
+                <button class="btn-primary" type="submit">搜索</button>
+            </form>
+        </div>
+        <div class="mobile-panel" data-mobile-panel>
+            <div class="container-custom mobile-panel-inner">
+                <a class="mobile-link" href="index.html">首页</a>
+                <a class="mobile-link is-active" href="categories.html">分类总览</a>
+                <a class="mobile-link" href="rank.html">热播榜</a>
+                <a class="mobile-link" href="category/latest-update.html">最新更新</a>
+                <a class="mobile-link" href="category/japanese-drama.html">日本剧集</a>
+                <a class="mobile-link" href="category/korean-movie.html">韩国电影</a>
+                <form class="mobile-search" action="search.html" data-search-form>
+                    <input class="input-field" type="search" name="q" placeholder="搜索影视内容..." autocomplete="off">
+                    <button class="btn-primary" type="submit">搜索</button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero gradient-hero">
+            <div class="container-custom">
+                <span class="hero-kicker">站内搜索</span>
+                <h1>搜索影视内容</h1>
+                <p>可按影片名、地区、年份、类型、题材标签快速检索。</p>
+                <form class="search-page-form" action="search.html" data-search-form>
+                    <input class="input-field" type="search" name="q" placeholder="输入关键词..." data-search-page-input autocomplete="off">
+                    <button class="btn-primary" type="submit">搜索</button>
+                </form>
+            </div>
+        </section>
+        <section class="container-custom content-section">
+            <div class="section-heading">
+                <div>
+                    <h2 data-search-title>搜索结果</h2>
+                    <p data-search-count>请输入关键词后查看相关内容。</p>
+                </div>
+            </div>
+            <div class="movie-grid" data-search-results></div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="container-custom footer-grid">
+            <div>
+                <div class="footer-brand">
+                    <span class="brand-icon">▶</span>
+                    <span>日韩好看视频</span>
+                </div>
+                <p>畅享最新日韩电影、电视剧，无需等待，即刻观看！提供高清画质的韩国电影、日本电视剧、日韩综艺节目，每日更新最新影视资源。</p>
+            </div>
+            <div>
+                <h2>影视分类</h2>
+                <div class="footer-links">
+                    <a href="category/latest-update.html">最新更新</a>
+                    <a href="category/japanese-drama.html">日本剧集</a>
+                    <a href="category/korean-movie.html">韩国电影</a>
+                    <a href="category/hot-drama.html">热门剧集</a>
+                    <a href="category/action-suspense.html">动作悬疑</a>
+                    <a href="category/comedy-life.html">喜剧生活</a>
+                    <a href="category/anime-fantasy.html">动画奇幻</a>
+                    <a href="category/romance-family.html">爱情家庭</a>
+                    <a href="category/classic-movie.html">经典电影</a>
+                    <a href="category/drama-choice.html">剧情佳作</a>
+                </div>
+            </div>
+            <div>
+                <h2>快捷入口</h2>
+                <div class="footer-links">
+                    <a href="rank.html">热播榜</a>
+                    <a href="categories.html">全部分类</a>
+                    <a href="search.html">搜索影片</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 日韩好看视频 · 高清影视资源每日更新</div>
+    </footer>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
